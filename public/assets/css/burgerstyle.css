@@ -1,0 +1,32 @@
+.btn {
+    text-align: center;
+    margin: 20px;
+}
+
+#mainCard {
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  color: rgb(42, 42, 42);
+  padding: 20px;
+ font-family: 'Raleway', sans-serif;}
+
+.mainImage {
+  width: 400px;
+  height: auto;
+}
+
+.card-body {
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+}
+ 
+h5 {
+  padding: 15px;
+  font-size: 25px;
+}
+
+body {
+  background-color: rgba(227, 234, 240, 0.767);
+}
