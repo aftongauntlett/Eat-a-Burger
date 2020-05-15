@@ -5,9 +5,7 @@
 
 Developed By: https://github.com/aftongauntlett
 
-Project URL: https://github.com/aftongauntlett/Eat-a-Burger
-
-Deployed URL: 
+Project URL: https://github.com/aftongauntlett/Eat-a-Burger 
 
 
 # Description
@@ -17,7 +15,7 @@ User will be able to choose what type of burger to eat, the burger will move fro
 
 # Launch Website:
 
-Vist: 
+Deployed URL:
 
 # Installation to Run Locally:
 
@@ -54,18 +52,8 @@ node server.js
 
 ## Screenshot
 
-
-### Main Menu:
-
 ![screenshot]()
 
-### Employee Menu:
-
-![screenshot]()
-
-### Exit Screen:
-
-![screenshot]()
 
 
 

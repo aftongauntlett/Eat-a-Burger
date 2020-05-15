@@ -6,7 +6,7 @@ const routes = require("./controllers/burgers_controller.js");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public'))
+app.use(express.static("public"));
 
 // Set the port of our application, process.env.PORT lets the port be set by Heroku
 const PORT = process.env.PORT || 8080;
