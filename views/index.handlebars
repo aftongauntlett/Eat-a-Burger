@@ -1,37 +1,53 @@
-<link rel="stylesheet" href="/public/assets/css/burgerstyle.css" type="text/css" />
+<div class="jumbotron jumbotron-fluid">
+    <div id="jumbotronFont" class="container">
+        <div class="jumbotronBurger">
+            <img src="assets/image/burger.jpg" "card-img-top" alt="burger">
+            <h1 class="display-4">Eat-A-Burger</h1>
+            <p class="lead">Nom Nom Nom</p>
+        </div>
+    </div>
+</div>
 
 
-<h1>Eat a Burger</h1>
+<div class="card-deck" id="mainCard">
+    <div class="card">
+        <h3 class="card-header">Waiting to be devoured!</h3>
+        <div class="card-body">
+            <ul>
+                {{#each uneatenBurgers}}
+                <p class="uneatenInput">{{this.name}}</p>
+                <form action="/devour/{{this.id}}" method="POST">
+                    <button type="submit">Devour!</button>
+                </form>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
 
-<div class="uneaten">
-    <h3>Uneaten Burger</h3>
-    <ul>
-        {{#each uneatenBurgers}}
-        <li>
-            <p>Burger: {{this.name}}</p>
-            <form action="/devour/{{this.id}}" method="POST">
-                <button type="submit">Devour!</button>
+    <div class="card">
+        {{!-- <div class="card-body"> --}}
+        <div class="burgerForm">
+            <form action="/burgers" method="POST">
+                <h3 id="formBox" class="card-header">What burger would you like to try?</h3>
+                <textarea class="form-control-lg" type="text" name="burger" rows="5"></textarea>
+                <br>
+                <button id="buttonBurger" type="submit">Submit</button>
             </form>
-        </li>
-        {{/each}}
-    </ul>
-</div>
+        </div>
+        {{!-- </div> --}}
+    </div>
 
-<div class="devoured">
-    <h3>Devoured Burger</h3>
-    <ul>
-        {{#each devouredBurgers}}
-        <li>
-            <p>Burger: {{this.name}}</p>
-        </li>
-        {{/each}}
-    </ul>
-</div>
 
-<div class="burgerForm">
-    <form action="/burgers" method="POST">
-        <textarea type="text" name="burger"></textarea>
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="card">
+        <h3 class="card-header">Devoured!!</h3>
+        <div class="card-body">
+            <ul>
+                {{#each devouredBurgers}}
+                <p class="devourInput">{{this.name}}</p>
+                {{/each}}
+            </ul>
+        </div>
+
+    </div>
+
 </div>

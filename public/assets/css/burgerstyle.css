@@ -9,7 +9,7 @@
   justify-content: center; 
   color: rgb(42, 42, 42);
   padding: 20px;
- font-family: 'Raleway', sans-serif;}
+  font-family: 'Raleway', sans-serif;}
 
 .mainImage {
   width: 400px;
@@ -27,23 +27,49 @@ h5 {
   font-size: 25px;
 }
 
+h3 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(46, 46, 46);
+}
+
 body {
   background-color: rgba(227, 234, 240, 0.767);
 }
 
-.uneatenBurgers{
-  color: red;
-
+.jumbotronBurger {
+  text-align: center;
 }
 
-/* .devoured{
-
+.uneatenInput {
+  color: rgb(95, 95, 124);
+  padding-top: 30px ;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
 }
 
-.burgerForm {
-
+.devourInput {
+  color: rgb(95, 95, 124);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
 }
 
-h1 {
-  font-size: 40px;
-} */
+#mainCard {
+  padding: 20px;
+}
+
+#buttonBurger {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#jumbotronFont {
+  color: rgb(75, 102, 100);
+}
+
+#formBox {
+  margin-bottom: 50px;
+}
