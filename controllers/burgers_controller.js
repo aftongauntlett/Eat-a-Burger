@@ -5,30 +5,26 @@ const connection = require("../config/connection");
 // Import burger.js
 const burger = require("../models/burger")
 
-// Create the routers for the app (** optional **)
-router.get("/burgers", function (req, res) {
-    burger.all(function (burgers) {
-        res.render("index", { burgers })
-    })
-})
-
+// how to create new burgers
 router.post("/burgers", function (req, res) {
-    console.log(req.body);
     burger.create(function (resp) {
-        res.redirect("/burgers")
+        res.redirect("/")
     }, req.body.burger)
 })
 
-
-router.patch("/burgers/:id", function (req, res) {
-
-})
-
+// index file
 router.get("/", function (req, res) {
     burger.all(function (burgers) {
         const devouredBurgers = burgers.filter(burger => burger.devoured === 1)
         const uneatenBurgers = burgers.filter(burger => burger.devoured === 0)
         res.render("index", { devouredBurgers, uneatenBurgers })
+    })
+})
+
+// make a post possible to "devour" the burger
+router.post("/devour/:id", function (req, res) {
+    burger.devour(req.params.id, function () {
+        res.redirect("/")
     })
 })
 

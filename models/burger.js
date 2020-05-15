@@ -14,15 +14,20 @@ const burger = {
 
     // insertOne()
     create(callback, name) {
-        console.log('did I get here')
         connection.query("INSERT INTO burgers SET ?", {
             name,
+            devoured: 0
         }, function (resp) {
             callback(resp)
         })
-    }
+    },
 
-    // updateOne()
+    devour(id, callback) {
+        connection.query("UPDATE burgers SET devoured = 1 WHERE id = " + id, (err) => {
+            if (err) throw err;
+            callback()
+        })
+    }
 }
 
 
