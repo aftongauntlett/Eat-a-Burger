@@ -38,6 +38,7 @@ __Run in Command Line__
 ```
 npm install 
 node server.js
+click on link provided in your terminal
 ``` 
 
 # Technologies: 
