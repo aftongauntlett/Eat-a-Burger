@@ -16,9 +16,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 app.use(routes);
-app.get("/", function (req, res) {
-    res.render("index")
-})
+
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {

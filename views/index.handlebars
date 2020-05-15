@@ -1,11 +1,18 @@
-<h1>Wish Saver</h1>
+<h1>Eat a Burger</h1>
 
-<h3>Save Wishes</h3>
-
+<h3>Uneaten Burger</h3>
 <ul>
-    {{#each burgers}}
+    {{#each uneatenBurgers}}
     <li>
-        <p>ID: {{this.id}}</p>
+        <p>Burger: {{this.name}}</p>
+    </li>
+    {{/each}}
+</ul>
+
+<h3>Devoured Burger</h3>
+<ul>
+    {{#each devouredBurgers}}
+    <li>
         <p>Burger: {{this.name}}</p>
     </li>
     {{/each}}
