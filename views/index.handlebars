@@ -1,9 +1,9 @@
 <div class="jumbotron jumbotron-fluid">
     <div id="jumbotronFont" class="container">
         <div class="jumbotronBurger">
-            <img src="assets/image/burger.jpg" "card-img-top" alt="burger">
-            <h1 class="display-4">Eat-A-Burger</h1>
-            <p class="lead">Nom Nom Nom</p>
+            <img src="assets/image/sumia-box.jpg" "card-img-top" id="picture" alt="cat in box">
+            <h1 class="display-4">Pet a Kitty!</h1>
+            <p class="lead">Meow</p>
         </div>
     </div>
 </div>
@@ -11,13 +11,13 @@
 
 <div class="card-deck" id="mainCard">
     <div class="card">
-        <h3 class="card-header">Waiting to be devoured!</h3>
+        <h3 class="card-header">Patiently waiting...</h3>
         <div class="card-body">
             <ul>
                 {{#each uneatenBurgers}}
                 <p class="uneatenInput">{{this.name}}</p>
                 <form action="/devour/{{this.id}}" method="POST">
-                    <button type="submit">Devour!</button>
+                    <button type="submit">Pat</button>
                 </form>
                 {{/each}}
             </ul>
@@ -28,8 +28,9 @@
         {{!-- <div class="card-body"> --}}
         <div class="burgerForm">
             <form action="/burgers" method="POST">
-                <h3 id="formBox" class="card-header">What burger would you like to try?</h3>
-                <textarea class="form-control-lg" type="text" name="burger" rows="5"></textarea>
+                <h3 id="formBox" class="card-header">What type of cat do you want to pet?</h3>
+                <textarea class="form-control-lg" type="text" name="burger" rows="5"
+                    placeholder="e.g. tortoiseshell, calico"></textarea>
                 <br>
                 <button id="buttonBurger" type="submit">Submit</button>
             </form>
@@ -39,7 +40,7 @@
 
 
     <div class="card">
-        <h3 class="card-header">Devoured!!</h3>
+        <h3 class="card-header">Purring!</h3>
         <div class="card-body">
             <ul>
                 {{#each devouredBurgers}}

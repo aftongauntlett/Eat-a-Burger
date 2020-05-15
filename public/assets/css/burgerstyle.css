@@ -67,9 +67,14 @@ body {
 }
 
 #jumbotronFont {
-  color: rgb(75, 102, 100);
+  color: rgb(95, 95, 124);
 }
 
 #formBox {
   margin-bottom: 50px;
+}
+
+#picture {
+  width: 500px;
+  height: auto;
 }
