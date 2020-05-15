@@ -1,21 +1,21 @@
-# Eat-a-Burger
+# Pet-A-Cat
 
-![GitHub forks](https://img.shields.io/github/forks/aftongauntlett/Eat-a-Burger?style=social)
+![GitHub forks](https://img.shields.io/github/forks/aftongauntlett/Pet-A-Cat?style=social)
 
 
 Developed By: https://github.com/aftongauntlett
 
-Project URL: https://github.com/aftongauntlett/Eat-a-Burger 
+Project URL: https://github.com/aftongauntlett/Pet-A-Cat 
 
 
 # Description
 Node Express app, using MySQL as database and handlebar to serve the HTML page. 
 
-User will be able to choose what type of burger to eat, the burger will move from the "to be eaten" table. From there user can choose to "eat" the burger, and the burger will move to a table on the left side showing that it has been eaten. The app stores every burger in a database, whether it has been eaten or not.
+The user will be able to choose what type of cat to pet by entering the name or breed into the text field. Once the user hits submit, the cat will be placed into the "patiently waiting" category. From there, the user can choose to pet the cat. Once the kitty has been pat, it will move to the purring category. The app will store all cat information entered, whether the cat has been pet or not.
 
 # Launch Website:
 
-Deployed URL:
+Deployed URL: 
 
 # Installation to Run Locally:
 
@@ -52,7 +52,7 @@ node server.js
 
 ## Screenshot
 
-![screenshot]()
+![screenshot](https://i.imgur.com/hBmneVl.jpg)
 
 
 
