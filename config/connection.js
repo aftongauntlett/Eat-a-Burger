@@ -3,7 +3,8 @@ var mysql = require("mysql");
 const config = require("./db");
 
 const dbCreds = (process.env.NODE_ENV === "production") ? config.heroku : config.db;
-const connection = mysql.createConnection(dbCreds);
+const connection = mysql.createConnection(dbCreds); +
+    connection.on('error', connectDb());
 connection.connect(function (err) {
     if (err) {
         console.error("error connecting: " + err.stack);
