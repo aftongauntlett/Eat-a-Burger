@@ -2,10 +2,10 @@
 
 ![GitHub forks](https://img.shields.io/github/forks/aftongauntlett/Pet-A-Cat?style=social)
 
+**Github Repo:** https://github.com/aftongauntlett/Pet-A-Cat 
 
-Developed By: https://github.com/aftongauntlett
+**Deployed:** https://pet-a-cat.herokuapp.com/
 
-Project URL: https://github.com/aftongauntlett/Pet-A-Cat 
 
 
 # Description
